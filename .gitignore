@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project – keep results (figures + aggregated CSVs) but ignore large raw data
+data/*.csv
+data/*.parquet
+data/*.hdf5
+# Large raw simulation records (~11-21 MB each) – reproducible via exp scripts
+results/exp4_records.csv
+results/exp5_records.csv
+
+# MLflow
+mlruns/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
